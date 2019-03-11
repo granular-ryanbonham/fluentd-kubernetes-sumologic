@@ -181,7 +181,7 @@ module Fluent::Plugin
           record.delete("docker")
           record["kubernetes"].delete("pod_id")
           record["kubernetes"].delete("namespace_id")
-          record["kubernetes"].delete("labels")
+          # record["kubernetes"].delete("labels")
           record["kubernetes"].delete("master_url")
           record["kubernetes"].delete("annotations")
         end
